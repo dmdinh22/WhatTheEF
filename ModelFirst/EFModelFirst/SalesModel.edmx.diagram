@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5ce78d600a5d40d184ffa382d9c8b1c8" Name="SalesDetails" >
+        <EntityTypeShape EntityType="SalesModel.Customer" Width="1.5" PointX="0.5" PointY="0.625" />
+        <EntityTypeShape EntityType="SalesModel.Order" Width="1.5" PointX="2.625" PointY="1.125" />
+        <EntityTypeShape EntityType="SalesModel.LineItem" Width="1.5" PointX="5.125" PointY="1.75" />
+        <EntityTypeShape EntityType="SalesModel.Product" Width="1.5" PointX="5" PointY="5.125" />
+        <EntityTypeShape EntityType="SalesModel.Category" PointX="2" PointY="5" Width="1.5" />
+        <AssociationConnector Association="SalesModel.CustomerOrder" />
+        <AssociationConnector Association="SalesModel.OrderLineItem" />
+        <AssociationConnector Association="SalesModel.ProductLineItem" />
+        <AssociationConnector Association="SalesModel.CategoryProduct" />
+      </Diagram>
+      <Diagram DiagramId="184c7bb0c1c844bbbba44966c7e12586" Name="CustomerDetails" >
+        <EntityTypeShape EntityType="SalesModel.Customer" Width="1.5" PointX="1.5" PointY="1.875" />
+        <EntityTypeShape EntityType="SalesModel.Address" Width="1.5" PointX="4.75" PointY="2.25" />
+        <EntityTypeShape EntityType="SalesModel.ContactDetail" Width="1.5" PointX="2.625" PointY="5" />
+        <AssociationConnector Association="SalesModel.CustomerAddress" />
+        <AssociationConnector Association="SalesModel.CustomerContactDetail" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
